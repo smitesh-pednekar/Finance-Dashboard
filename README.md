@@ -98,12 +98,12 @@ flowchart LR
 ### Route Map
 
 ```mermaid
-graph TD
-    R[/] --> D[Dashboard]
-    R2[/transactions] --> T[Transactions]
-    R3[/insights] --> I[Insights]
-    R4[/budgets] --> B[Budgets]
-    X[*] --> R
+flowchart TD
+  ROOT["/"] --> DASH[Dashboard]
+  TXN["/transactions"] --> TXNPAGE[Transactions]
+  INS["/insights"] --> INSPAGE[Insights]
+  BUD["/budgets"] --> BUDPAGE[Budgets]
+  FALLBACK["*"] --> ROOT
 ```
 
 ---
